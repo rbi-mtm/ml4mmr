@@ -7,5 +7,21 @@ This repository contains the tutorials held at **ML4MMR**.
 
 # Table of Contents
  1. [Introduction](#1-introduction)
+ 2. [Tutorials Schedule](#2-tutorials-schedule)
 
 # 1. Introduction
+
+# 2. Tutorials Schedule
+
+| Day | Time  | Lecturer                     | Kernel / Environment |
+| --- | ----- | ---------------------------  | -------------------- |
+| Mon | 16:15 | Nicola Molinari              | TODO                 |
+| Tue | 09:45 | Ilyes Batatia                | TODO                 |
+| Tue | 12:00 | Martin Uhrin                 | TODO                 |
+| Tue | 16:15 | Tristan Bereau & Luis Walter | TODO                 |
+| Wed | 09:45 | Jonathan Schmidth            | TODO                 |
+| Wed | 16:15 | Milica Todorović             | TODO                 |
+| Thu | 09:45 | Johannes Dietschreit         | TODO                 |
+| Thu | 12:00 | Lucas Foppa                  | TODO                 |
+| Fri | 09:45 | Robert Pinsler               | TODO                 |
+| Fri | 12:00 | Andrés M Bran                | TODO                 |
