@@ -6,6 +6,6 @@ The school is held in [**Zadar, Croatia**](https://maps.app.goo.gl/ghrk4jbUWV7TU
 This repository contains the tutorials held at **ML4MMR**.
 
 # Table of Contents
- 1. [Introduction](#introduction) 
+ 1. [Introduction](#1-introduction)
 
 # 1. Introduction
