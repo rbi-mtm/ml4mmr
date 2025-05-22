@@ -15,13 +15,13 @@ This repository contains the tutorials held at **ML4MMR**.
 
 | Day | Time  | Lecturer                     | Kernel / Environment |
 | --- | ----- | ---------------------------  | -------------------- |
-| Mon | 16:15 | Nicola Molinari              | TODO                 |
-| Tue | 09:45 | Ilyes Batatia                | TODO                 |
-| Tue | 12:00 | Martin Uhrin                 | TODO                 |
-| Tue | 16:15 | Tristan Bereau & Luis Walter | TODO                 |
-| Wed | 09:45 | Jonathan Schmidth            | TODO                 |
-| Wed | 16:15 | Milica Todorović             | TODO                 |
-| Thu | 09:45 | Johannes Dietschreit         | TODO                 |
-| Thu | 12:00 | Lucas Foppa                  | TODO                 |
-| Fri | 09:45 | Robert Pinsler               | TODO                 |
-| Fri | 12:00 | Andrés M Bran                | TODO                 |
+| Mon | 16:15 | Nicola Molinari              | TODO / T1            |
+| Tue | 09:45 | Ilyes Batatia                | TODO / T2            |
+| Tue | 12:00 | Martin Uhrin                 | TODO / T3            |
+| Tue | 16:15 | Tristan Bereau & Luis Walter | TODO / T4            |
+| Wed | 09:45 | Jonathan Schmidth            | TODO / T5            |
+| Wed | 16:15 | Milica Todorović             | TODO / T6            |
+| Thu | 09:45 | Johannes Dietschreit         | TODO / T7            |
+| Thu | 12:00 | Lucas Foppa                  | TODO / T8            |
+| Fri | 09:45 | Robert Pinsler               | TODO / T9            |
+| Fri | 12:00 | Andrés M Bran                | TODO / T10           |
