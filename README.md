@@ -7,6 +7,5 @@ This repository contains the tutorials held at **ML4MMR**.
 
 # Table of Contents
  1. [Introduction](#introduction) 
- 2. 
 
-# 1. Introduction <a name="introduction"></a>
+# 1. Introduction
