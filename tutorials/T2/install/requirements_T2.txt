@@ -1,5 +1,4 @@
 mace-torch
-xtb
 nglview
 ipywidgets
 rdkit
