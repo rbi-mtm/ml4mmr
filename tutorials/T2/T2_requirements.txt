@@ -1,0 +1,8 @@
+mace-torch
+xtb
+nglview
+ipywidgets
+rdkit
+x3dase
+numpy == 2.0
+aseMolec @ git+https://github.com/imagdau/aseMolec@main
