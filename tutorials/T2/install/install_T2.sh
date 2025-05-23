@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#
+# Usage:
+#
+# in a conda base environment, run:
+#
+# source install_T2.sh
+#
+
 # Check if CONDA_PREFIX is set
 
 if [ -z "${CONDA_PREFIX}" ]; then
@@ -32,7 +40,7 @@ fi
 
 ### Install
 
-conda create -y -n T2 -c conda-forge -c anaconda ipykernel xtb
+conda create -y -n T2 -c conda-forge -c anaconda ipykernel xtb-python
 
 source $CONDA_BASE_PREFIX/bin/activate T2
 python -m ipykernel install --user --name=T2
