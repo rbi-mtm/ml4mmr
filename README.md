@@ -16,7 +16,7 @@ This repository contains the tutorials held at **ML4MMR**.
 | Day | Time  | Lecturer                     | Kernel / Environment |
 | --- | ----- | ---------------------------  | -------------------- |
 | Mon | 16:15 | Nicola Molinari              | TODO / T1            |
-| Tue | 09:45 | Ilyes Batatia                | TODO / T2            |
+| Tue | 09:45 | Ilyes Batatia                | [T2](tutorials/T2)   |
 | Tue | 12:00 | Martin Uhrin                 | TODO / T3            |
 | Tue | 16:15 | Tristan Bereau & Luis Walter | TODO / T4            |
 | Wed | 09:45 | Jonathan Schmidth            | TODO / T5            |
