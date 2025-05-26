@@ -89,7 +89,7 @@ source install_environments.sh -p /usr/local
 
 For more information on the system-wide installation, check the [IPython documentation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments).
 
-[install_environments.sh](install/install_environments.sh) invokes a separate script for each tutorial. The scripts may be run stand-alone in an analogous way to (re)install the environment/kernel only for a given tutorial.
+[install_environments.sh](install/install_environments.sh) invokes a separate environment-installing script for each tutorial. The scripts may be run stand-alone in an analogous way to (re)install the environment/kernel only for a given tutorial.
 E.g., to install system-wide packages only for the [T2](tutorials/T2) tutorial:
 
 ```bash
