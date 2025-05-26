@@ -43,9 +43,9 @@ fi
 
 CONDA_BASE_PREFIX=$CONDA_PREFIX
 
-# Save path to the ./tutorials directory
+# Save path to the root installation directory
 
-TUTORIALS=$(realpath tutorials)
+INSTALL_ROOT_DIR=$PWD
 
 ### Install all environments and kernels
 
@@ -56,9 +56,9 @@ do
 	echo "Installing T$i..."
 	echo "----------------"
 
-	T_PATH="$TUTORIALS/T$i/install"
+	T_PATH="$INSTALL_ROOT_DIR/T$i"
 
-	source $T_PATH/install_T$i.sh
+	source $T_PATH/install.sh
 	source $CONDA_BASE_PREFIX/bin/activate base
 
 done

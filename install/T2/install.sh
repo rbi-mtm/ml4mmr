@@ -5,7 +5,7 @@
 #
 # in a conda base environment, run:
 #
-# source install_T2.sh
+# source install.sh
 #
 
 # Check if CONDA_PREFIX is set
@@ -29,21 +29,25 @@ fi
 
 CONDA_BASE_PREFIX=$CONDA_PREFIX
 
-# Check if the script is being run from ../../../install_environments.sh
-# or from the same directory it is located in
+# Check if the script is being run from ../install_environments.sh
+# or from current directory
 
-if [ -z "${TUTORIALS}" ]; then
+if [ -z "${INSTALL_ROOT_DIR}" ]; then
 
 	T_PATH=$PWD
 
 fi
 
+# Get tutorial number
+
+T_NO=$(basename "$T_PATH")
+
 ### Install
 
-conda create -y -n T2 -c conda-forge -c anaconda ipykernel xtb-python
+conda create -y -n $T_NO -c conda-forge -c anaconda ipykernel xtb-python
 
-source $CONDA_BASE_PREFIX/bin/activate T2
-python -m ipykernel install --user --name=T2
-python -m pip install -r $T_PATH/requirements_T2.txt
+source $CONDA_BASE_PREFIX/bin/activate $T_NO
+python -m ipykernel install --user --name=$T_NO
+python -m pip install -r $T_PATH/requirements.txt
 
 source $CONDA_BASE_PREFIX/bin/activate base
