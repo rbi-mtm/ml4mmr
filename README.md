@@ -8,8 +8,18 @@ This repository contains the tutorials held at **ML4MMR**.
 # Table of Contents
  1. [Introduction](#1-introduction)
  2. [Tutorials Schedule](#2-tutorials-schedule)
+ 3. [Setting Up](#3-setting-up)
+    
+    3.1. [Login to JupyterHub](#31-login-to-jupyterhub)
+    
+    3.2. [Install the Virtual Machine](#32-install-the-virtual-machine)
+    
+ 5. [Running the Tutorials](#4-running-the-tutorials)
+ 6. [Installation](#5-installation)
 
 # 1. Introduction
+
+TODO - Write general introduction
 
 # 2. Tutorials Schedule
 
@@ -25,3 +35,23 @@ This repository contains the tutorials held at **ML4MMR**.
 | Thu | 12:00 | Lucas Foppa                  | TODO / T8            |
 | Fri | 09:45 | Robert Pinsler               | TODO / T9            |
 | Fri | 12:00 | Andrés M Bran                | TODO / T10           |
+
+# 3. Setting Up
+
+TODO - Insert intro to setting up
+
+## 3.1. Login to JupyterHub
+
+TODO - Insert instructions on how to login to JupyterHub.
+
+## 3.2. Install the Virtual Machine
+
+TODO - Insert instructions on how to install the virtual machine.
+
+# 4. Running the Tutorials
+
+TODO - Insert instructions on how to change kernels inside a Jupyter Notebook.
+
+# 5. Installation
+
+TODO - Insert instructions on how to install the conda environments and Jupyter kernels.
