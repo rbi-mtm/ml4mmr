@@ -54,4 +54,47 @@ TODO - Insert instructions on how to change kernels inside a Jupyter Notebook.
 
 ## 5. Installation
 
-TODO - Insert instructions on how to install the conda environments and Jupyter kernels.
+Currently, this chapter covers only the installation of Python packages
+necessary to run the tutorials. System requirements will be added as necessary.
+
+First, clone this repository:
+
+```bash
+git clone https://github.com/rbi-mtm/ml4mmr
+```
+
+The main installation script is given in [install/install_environments.sh](install/install_environments.sh).
+
+This script will install a separate [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) and [IPython kernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments) for each tutorial. 
+The installed kernels may then be activated in Jupyter Notebook as described in [4. Running the Tutorials](#4-running-the-tutorials).
+
+[install_environments.sh](install/install_environments.sh) may perform a user-wide or system-wide installation. The script must be run from the [install](install) directory and in the conda ``base`` environment.
+
+User-wide installation:
+
+```bash
+cd ml4mmr/install
+source /path/to/conda/bin/activate base
+source install_environments.sh
+```
+
+System-wide installation:
+
+```bash
+cd ml4mmr/install
+sudo -s
+source /path/to/conda/bin/activate base
+source install_environments.sh -p /usr/local
+```
+
+For more information on the system-wide installation, check the [IPython documentation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments).
+
+[install_environments.sh](install/install_environments.sh) invokes a separate script for each tutorial. The scripts may be run stand-alone in an analogous way to (re)install the environment/kernel only for a given tutorial.
+E.g., to install system-wide packages only for the [T2](tutorials/T2) tutorial:
+
+```bash
+cd ml4mmr/install/T2
+sudo -s
+source /path/to/conda/bin/activate base
+source install.sh -p /usr/local
+```
