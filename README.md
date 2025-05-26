@@ -50,7 +50,11 @@ TODO - Insert instructions on how to install the virtual machine.
 
 ## 4. Running the Tutorials
 
-TODO - Insert instructions on how to change kernels inside a Jupyter Notebook.
+ 1. [Login to JupyterHub](#31-login-to-jupyterhub) or start a JupyterLab instance locally/in your [Virtual Machine](#32-install-the-virtual-machine)
+ 2. Using the [Tutorials Schedule](#2-tutorials-schedule), identify to which Kernel / Environment the current tutorial corresponds to
+ 3. Locate the tutorial Jupyter Notebook in the [tutorials](tutorials) directory and open it
+ 4. In JupyterLab, click ``Kernel`` &rarr; ``Change Kernel`` and select the kernel for the tutorial
+ 5. Enjoy the tutorial!
 
 ## 5. Installation
 
