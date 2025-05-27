@@ -34,7 +34,7 @@ TODO - Write general introduction
 | Thu | 09:45 | Johannes Dietschreit         | TODO / T7            |
 | Thu | 12:00 | Lucas Foppa                  | TODO / T8            |
 | Fri | 09:45 | Robert Pinsler               | TODO / T9            |
-| Fri | 12:00 | Andrés M Bran                | TODO / T10           |
+| Fri | 12:00 | Andrés M Bran                | [T10](tutorials/T10) |
 
 ## 3. Setting Up
 
