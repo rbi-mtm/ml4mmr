@@ -97,7 +97,7 @@ fi
 
 ### Install all environments and kernels
 
-for i in 2 6
+for i in 2 6 10
 do
 
 	echo "-----------------"
