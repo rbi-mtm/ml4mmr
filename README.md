@@ -23,6 +23,8 @@ TODO - Write general introduction
 
 ## 2. Tutorials Schedule
 
+(Subject to change)
+
 | Day | Time  | Lecturer                     | Kernel / Environment |
 | --- | ----- | ---------------------------  | -------------------- |
 | Mon | 16:15 | Nicola Molinari              | TODO / T1            |
