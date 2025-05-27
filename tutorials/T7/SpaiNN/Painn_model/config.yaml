@@ -1,0 +1,175 @@
+run:
+  work_dir: ${hydra:runtime.cwd}
+  data_dir: ${run.work_dir}/data
+  path: ${run.work_dir}/runs
+  experiment: methylenimmonium
+  id: johannes_painn
+  ckpt_path: null
+globals:
+  model_path: best_model
+  cutoff: 10.0
+  lr: 1.0e-05
+  energy_key: energy
+  forces_key: forces
+  nac_key: smooth_nacs
+  dipole_key: dipoles
+trainer:
+  _target_: pytorch_lightning.Trainer
+  devices: 1
+  min_epochs: null
+  max_epochs: 100000
+  enable_model_summary: true
+  enable_progress_bar: false
+  profiler: null
+  gradient_clip_val: 0
+  accumulate_grad_batches: 1
+  val_check_interval: 1.0
+  check_val_every_n_epoch: 1
+  num_sanity_val_steps: 0
+  fast_dev_run: false
+  overfit_batches: 0
+  limit_train_batches: 1.0
+  limit_val_batches: 1.0
+  limit_test_batches: 1.0
+  detect_anomaly: false
+  precision: 64
+  accelerator: auto
+  num_nodes: 1
+  deterministic: false
+  inference_mode: false
+callbacks:
+  model_checkpoint:
+    _target_: schnetpack.train.ModelCheckpoint
+    monitor: val_loss
+    save_top_k: 1
+    save_last: true
+    mode: min
+    verbose: false
+    dirpath: checkpoints/
+    filename: '{epoch:02d}'
+    model_path: ${globals.model_path}
+  early_stopping:
+    _target_: pytorch_lightning.callbacks.EarlyStopping
+    monitor: val_loss
+    patience: 300
+    mode: min
+    min_delta: 0.0
+    check_on_train_epoch_end: false
+  lr_monitor:
+    _target_: pytorch_lightning.callbacks.LearningRateMonitor
+    logging_interval: epoch
+  ema:
+    _target_: schnetpack.train.ExponentialMovingAverage
+    decay: 0.5
+task:
+  optimizer_cls: torch.optim.AdamW
+  optimizer_args:
+    lr: ${globals.lr}
+    weight_decay: 0.0
+  scheduler_cls: schnetpack.train.ReduceLROnPlateau
+  scheduler_monitor: val_loss
+  scheduler_args:
+    mode: min
+    factor: 0.8
+    patience: 50
+    threshold: 0.0
+    threshold_mode: rel
+    cooldown: 10
+    min_lr: 0.0
+    smoothing_factor: 0.0
+  _target_: schnetpack.AtomisticTask
+  outputs:
+  - _target_: schnetpack.task.ModelOutput
+    name: ${globals.energy_key}
+    loss_fn:
+      _target_: torch.nn.MSELoss
+    metrics:
+      mae:
+        _target_: torchmetrics.regression.MeanAbsoluteError
+    loss_weight: 1
+  - _target_: schnetpack.task.ModelOutput
+    name: ${globals.forces_key}
+    loss_fn:
+      _target_: torch.nn.MSELoss
+    metrics:
+      mae:
+        _target_: torchmetrics.regression.MeanAbsoluteError
+    loss_weight: 0.5
+  - _target_: schnetpack.task.ModelOutput
+    name: ${globals.nac_key}
+    loss_fn:
+      _target_: spainn.loss.PhaseLossAtomisticMSE
+      atoms: 6
+    metrics:
+      mae:
+        _target_: spainn.metric.PhaseAtomisticMAE
+        atoms: 6
+    loss_weight: 0.5
+  warmup_steps: 0
+model:
+  representation:
+    radial_basis:
+      _target_: schnetpack.nn.radial.GaussianRBF
+      n_rbf: 50
+      cutoff: ${globals.cutoff}
+    _target_: schnetpack.representation.PaiNN
+    n_atom_basis: 256
+    n_interactions: 3
+    shared_interactions: false
+    shared_filters: false
+    cutoff_fn:
+      _target_: schnetpack.nn.cutoff.CosineCutoff
+      cutoff: ${globals.cutoff}
+  _target_: schnetpack.model.NeuralNetworkPotential
+  input_modules:
+  - _target_: schnetpack.atomistic.PairwiseDistances
+  output_modules:
+  - _target_: spainn.Atomwise
+    output_key: ${globals.energy_key}
+    n_out: 3
+    n_layers: 3
+    n_in: ${model.representation.n_atom_basis}
+    aggregation_mode: sum
+  - _target_: spainn.Forces
+    energy_key: ${globals.energy_key}
+    force_key: ${globals.forces_key}
+  - _target_: spainn.Nacs
+    n_in: ${model.representation.n_atom_basis}
+    n_out: 3
+    nac_key: ${globals.nac_key}
+    n_layers: 3
+    use_vector_repr: true
+  postprocessors:
+  - _target_: schnetpack.transform.AddOffsets
+    property: energy
+    add_mean: true
+data:
+  _target_: spainn.SPAINN
+  datapath: ${run.data_dir}/methylenimmonium.db
+  n_states: 3
+  n_nacs: 3
+  data_workdir: null
+  batch_size: 10
+  num_train: 3200
+  num_val: 400
+  num_test: null
+  num_workers: 16
+  num_val_workers: null
+  num_test_workers: null
+  distance_unit: Bohr
+  property_units:
+    energy: Hartree
+    forces: Hartree/Bohr
+  transforms:
+  - _target_: schnetpack.transform.RemoveOffsets
+    property: energy
+    remove_mean: true
+  - _target_: schnetpack.transform.MatScipyNeighborList
+    cutoff: ${globals.cutoff}
+  - _target_: schnetpack.transform.CastTo64
+logger:
+  tensorboard:
+    _target_: pytorch_lightning.loggers.tensorboard.TensorBoardLogger
+    save_dir: tensorboard/
+    name: default
+print_config: true

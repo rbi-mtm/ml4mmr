@@ -1,0 +1,69 @@
+{
+    "V_ex_power": 12,
+    "V_ex_sigma": 1.0,
+    "activation": "swish",
+    "batch_size": 32,
+    "charge": 0,
+    "compute_delta": false,
+    "cutoff": 5.0,
+    "feat_dim": 128,
+    "grad_keys": [
+        "energy_0_grad",
+        "energy_1_grad",
+        "energy_2_grad"
+    ],
+    "log_every_n_epochs": 1,
+    "logger": "csv",
+    "loss": "mae",
+    "lr": 0.0001,
+    "lr_decay": 0.5,
+    "lr_min": 1e-07,
+    "lr_patience": 5,
+    "max_epochs": 100,
+    "mode": "train",
+    "model": "painn",
+    "model_type": "Painn",
+    "n_atom_basis": 64,
+    "n_convolutions": 2,
+    "n_filters": 64,
+    "n_gaussians": 32,
+    "n_rbf": 20,
+    "nnodes": 1,
+    "nprocs": 12,
+    "num_conv": 2,
+    "num_parallel": 1,
+    "required_keys": [
+        "nxyz",
+        "energy_S0",
+        "energy_S1",
+        "energy_S2",
+        "energy_S0_grad",
+        "energy_S1_grad",
+        "energy_S2_grad"
+    ],
+    "torch_par": false,
+    "trainable_gauss": true,
+    "workers": 2,
+    "output_keys": [
+        "dummy"
+    ],
+    "diabat_keys": [
+        [
+            "d_00",
+            "d_01",
+            "d_02"
+        ],
+        [
+            "d_01",
+            "d_11",
+            "d_12"
+        ],
+        [
+            "d_02",
+            "d_12",
+            "d_22"
+        ]
+    ],
+    "add_nacv": true,
+    "details": null
+}
