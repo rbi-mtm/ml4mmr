@@ -1,0 +1,3 @@
+langchain[community,openai]
+wikipedia
+rdkit
