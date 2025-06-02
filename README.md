@@ -31,7 +31,7 @@ TODO - Write general introduction
 | Tue | 16:15 | Tristan Bereau & Luis Walter | TODO / T4            |
 | Wed | 09:45 | Martin Uhrin                 | TODO / T5            |
 | Wed | 16:15 | Milica Todorović             | [T6](tutorials/T6)   |
-| Thu | 09:45 | Johannes Dietschreit         | TODO / T7            |
+| Thu | 09:45 | Johannes Dietschreit         | [T7](tutorials/T7)   |
 | Thu | 12:00 | Lucas Foppa                  | TODO / T8            |
 | Fri | 09:45 | Robert Pinsler               | TODO / T9            |
 | Fri | 12:00 | Andrés M Bran                | [T10](tutorials/T10) |
