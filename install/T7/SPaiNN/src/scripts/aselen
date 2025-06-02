@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+from ase.db import connect
+import sys
+
+def dblen(db,k=False):
+    try:
+        conn = connect(db)
+        if k:
+            return conn.get(1).data.keys()
+        return len(conn)
+    except ValueError:
+        return "Not a valid ASE db"
+
+keys = False
+if "-k" in sys.argv:
+    sys.argv.remove("-k")
+    keys = True
+
+for arg in sys.argv[1:]:
+    if keys:
+        print(f"{arg.split('/')[-1]:40s}{dblen(arg):7d}   {' '.join(dblen(arg,keys))}")
+    else:
+        print(f"{arg.split('/')[-1]:40s}{dblen(arg):7d}")

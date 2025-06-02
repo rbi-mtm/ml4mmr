@@ -1,0 +1,82 @@
+# @package _global_
+
+defaults:
+  - override /model: nnp
+  - override /data: methylenimmonium
+
+run:
+  experiment: methylenimmonium
+
+globals:
+  cutoff: 10.
+  lr: 1e-4
+  energy_key: energy
+  forces_key: forces
+  nac_key: smooth_nacs
+
+data:
+  distance_unit: Bohr
+  property_units:
+    energy: Hartree
+    forces: Hartree/Bohr
+  transforms:
+    - _target_: schnetpack.transform.RemoveOffsets
+      property: energy
+      remove_mean: True
+    - _target_: schnetpack.transform.MatScipyNeighborList
+      cutoff: ${globals.cutoff}
+    #- _target_: schnetpack.transform.CastTo32
+
+model:
+  output_modules:
+    - _target_: spainn.Atomwise
+      output_key: ${globals.energy_key}
+      n_out: 3
+      n_layers: 3
+      n_in: ${model.representation.n_atom_basis}
+      aggregation_mode: sum
+    - _target_: spainn.Forces
+      energy_key: ${globals.energy_key}
+      force_key: ${globals.forces_key}
+      n_states: 3
+    - _target_: spainn.Nacs
+      n_in: ${model.representation.n_atom_basis}
+      n_out: 3
+      nac_key: ${globals.nac_key}
+      n_layers: 3
+      use_vector_repr: True
+
+  postprocessors:
+    #- _target_: schnetpack.transform.CastTo64
+    - _target_: schnetpack.transform.AddOffsets
+      property: energy
+      add_mean: True
+
+task:
+  outputs:
+    - _target_: schnetpack.task.ModelOutput
+      name: ${globals.energy_key}
+      loss_fn:
+        _target_: torch.nn.MSELoss
+      metrics:
+        mae:
+          _target_: torchmetrics.regression.MeanAbsoluteError
+      loss_weight: 1
+    - _target_: schnetpack.task.ModelOutput
+      name: ${globals.forces_key}
+      loss_fn:
+        _target_: torch.nn.MSELoss
+      metrics:
+        mae:
+          _target_: torchmetrics.regression.MeanAbsoluteError
+      loss_weight: 1
+    - _target_: schnetpack.task.ModelOutput
+      name: ${globals.nac_key}
+      loss_fn:
+        _target_: spainn.loss.PhaseLossNacMSE
+        atoms: 6
+      metrics:
+        mae:
+          _target_: spainn.metric.PhaselessNAC
+          atoms: 6
+      loss_weight: 1

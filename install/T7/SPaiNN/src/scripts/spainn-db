@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+import sys
+from spainn.asetools import GenerateDB, ConvertDB
+
+
+def printhelp() -> None:
+    print(
+    """
+Usage: spainn-db [OPTIONS] [INPUT] [OUTPUT] [ARGS]
+
+    OPTIONS:
+        convert:
+            Convert your old SchNarc database to a SPaiNN compatible.
+
+            INPUT:
+                Path to SchNarc database
+            OUTPUT:
+                Path where the new database will be saved, if empty name will be INPUT_new
+            ARGS:
+                -s,  calculate smooth_nacs
+                -m,  do not copy old metadata
+
+        generate:
+            Generate a SPaiNN compatible database from SHARC outputs
+
+            INPUT:
+                Path to folder that contains all directories with QM.in and QM.out files
+                Warning: Path is searched recursively, make sure only files you want
+                         to add are in the path.
+            OUTPUT:
+                Path where the database will be saved
+            ARGS:
+                -s, calculate smooth_nacs
+
+        add_smooth:
+            Add smooth NACs to existing database
+
+            INPUT:
+                Path to SPaiNN database which does not contain smooth_nacs (energies and NACs needed)
+            OUTPUT:
+                None
+            ARGS:
+                None
+
+    """
+    )
+
+if __name__ == "__main__":
+    smooth_nacs = False
+    metadata = True
+    if "-h" in sys.argv:
+        printhelp()
+    elif "convert" in sys.argv:
+        if "-s" in sys.argv:
+            smooth_nacs = True
+            sys.argv.remove("-s")
+        if "-m" in sys.argv:
+            metadata = False
+            sys.argv.remove("-m")
+        if len(sys.argv) < 3:
+            print("Too few Arguments")
+            printhelp()
+        else:
+            out = "" if len(sys.argv) == 3 else sys.argv[3]
+            ConvertDB().convert(sys.argv[2], out, metadata, smooth_nacs)
+
+    elif "generate" in sys.argv:
+        if "-s" in sys.argv:
+            smooth_nacs = True
+            sys.argv.remove("-s")
+        if len(sys.argv) < 4:
+            print("Too few Arguments")
+            printhelp()
+        else:
+            GenerateDB().generate(sys.argv[2], sys.argv[3], smooth_nacs)
+    elif "add_smooth" in sys.argv:
+        if len(sys.argv) < 3:
+            print("Too few Arguments")
+            printhelp()
+        else:
+            GenerateDB().add_smooth_nacs(sys.argv[2])
+    else:
+        printhelp()

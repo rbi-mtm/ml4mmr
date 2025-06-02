@@ -1,0 +1,13 @@
+_target_: spainn.SPAINN
+
+datapath: ${run.data_dir}/methylenimmonium.db
+n_states: 3
+n_nacs: 3
+data_workdir: null
+batch_size: 40
+num_train: 3000
+num_val: 300
+num_test: null
+num_workers: 16
+num_val_workers: null
+num_test_workers: null
