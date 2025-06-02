@@ -1,0 +1,5 @@
+spainn @ git+https://github.com/CompPhotoChem/SPaiNN@main
+torch==2.2.2
+schnetpack==2.0.4
+matplotlib
+scikit-learn
