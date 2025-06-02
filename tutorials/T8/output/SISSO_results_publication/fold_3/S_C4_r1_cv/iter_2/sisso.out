@@ -1,0 +1,42 @@
+time input_parsing: 0.067183 s
+Time to generate feat space: 0.283209 s
+Projection time: 0.0467861 s
+Time to get best features on rank : 0.000603914 s
+Complete final combination/selection from all ranks: 0.0203931 s
+Time for SIS: 0.068506 s
+Time for l0-norm: 0.033371 s
+Projection time: 0.000231028 s
+Time to get best features on rank : 0.000324965 s
+Complete final combination/selection from all ranks: 0.015358 s
+Time for SIS: 0.0169861 s
+Time for l0-norm: 0.00319099 s
+Projection time: 0.000200033 s
+Time to get best features on rank : 0.00031209 s
+Complete final combination/selection from all ranks: 0.0140951 s
+Time for SIS: 0.0164881 s
+Time for l0-norm: 0.134565 s
+Projection time: 0.0002141 s
+Time to get best features on rank : 0.000313997 s
+Complete final combination/selection from all ranks: 0.0130582 s
+Time for SIS: 0.0164411 s
+Time for l0-norm: 18.2058 s
+Projection time: 0.000291109 s
+Time to get best features on rank : 0.000472069 s
+Complete final combination/selection from all ranks: 0.011796 s
+Time for SIS: 0.0157139 s
+Time for l0-norm: 2982.2 s
+Train RMSE: 0.0206814 Unitless; Test RMSE: 0.0228333 Unitless
+c0 + a0 * (av_bulk_int_dist / av_EA)
+
+Train RMSE: 0.015836 Unitless; Test RMSE: 0.0171075 Unitless
+c0 + a0 * (|av_d_band_center_surf - av_BE_H_surf|) + a1 * (av_E_coh / av_EA)
+
+Train RMSE: 0.011376 Unitless; Test RMSE: 0.00955667 Unitless
+c0 + a0 * (ln(-1.0*particle_diameter+9.000000e+00)) + a1 * (av_mu_C_critical_subsurf * av_EA) + a2 * (av_W_change_H * particle_diameter)
+
+Train RMSE: 0.00940094 Unitless; Test RMSE: 0.00811502 Unitless
+c0 + a0 * (ln(-1.0*particle_diameter+9.000000e+00)) + a1 * (av_delta_M1_M2_subsurf / time) + a2 * (av_mu_C_critical_subsurf * av_EA) + a3 * (av_W_change_H * particle_diameter)
+
+Train RMSE: 0.00733866 Unitless; Test RMSE: 0.00670977 Unitless
+c0 + a0 * (av_PE / particle_diameter) + a1 * (av_d_band_center_surf / time) + a2 * (av_E_b_C_subsurf * av_EA) + a3 * (av_delta_M1_M2_subsurf * av_IP) + a4 * (exp(1.000003e+00*av_delta_M1_M2_subsurf))
+

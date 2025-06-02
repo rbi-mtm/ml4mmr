@@ -1,0 +1,5 @@
+
+EnvironmentNameNotFound: Could not find conda environment: sisso_intel
+You can list all discoverable environments with `conda info --envs`.
+
+

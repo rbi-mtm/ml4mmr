@@ -1,0 +1,149 @@
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter * total_metal_loading) * av_E_def_subsurf) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.113408866516186; Max AE: 0.609221725730477
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_bulk_int_dist / av_E_def_subsurf) / (particle_diameter * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.1140260931867; Max AE: 0.554069738575686
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter * total_metal_loading) * av_E_def_subsurf) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.114864056758628; Max AE: 0.59840192774079
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((std_dev + particle_diameter) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.115610625279407; Max AE: 0.530916825389171
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((av_bulk_int_dist / av_E_def_subsurf) / (particle_diameter * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.116156261688543; Max AE: 0.55210148309935
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter / av_E_coh) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.116422322145902; Max AE: 0.586903048063457
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_bulk_int_dist) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.116672137503524; Max AE: 0.589099952471039
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter / av_bulk_int_dist) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.116763423101161; Max AE: 0.585719300262405
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_E_coh / total_metal_loading) / (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.116804523026576; Max AE: 0.554350948723372
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter * total_metal_loading) * (av_E_def_subsurf / av_IP)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.116922814039354; Max AE: 0.578499995293957
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_E_coh) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.117355932155389; Max AE: 0.593177678668962
+# c0 + @ * ((av_W_change_H * time) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_bulk_int_dist / av_E_def_subsurf) / (particle_diameter * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.117576756477778; Max AE: 0.550971391935078
+# c0 + @ * ((av_W_change_H * time) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter * total_metal_loading) * av_E_def_subsurf) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.118039395100632; Max AE: 0.602678352928393
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((av_E_coh / total_metal_loading) / (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.118228099194131; Max AE: 0.547350810070078
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter * total_metal_loading) * (av_E_def_subsurf / av_IP)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.118320474544411; Max AE: 0.581042699476316
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_W_change_H * std_dev) + (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.119510940816312; Max AE: 0.525334508715112
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((av_IP / particle_diameter) / (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.119826705423414; Max AE: 0.526585806885551
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_IP / particle_diameter) / (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.119901517419219; Max AE: 0.527709460601932
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_E_def_subsurf * particle_diameter) / (av_IP^2)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120048854142831; Max AE: 0.568224790432139
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_B_0) * (av_E_def_subsurf * av_mu_C_critical_subsurf)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120120879312753; Max AE: 0.535464805542036
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_E_def_subsurf * particle_diameter) / (av_E_coh * av_PE)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120178129020016; Max AE: 0.577070458342674
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_mu_C_critical_surf) / (av_bulk_int_dist^6)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120208049051491; Max AE: 0.562078140466232
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((std_dev + particle_diameter) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120221392453401; Max AE: 0.523684525425887
+# c0 + @ * ((av_W_change_H * time) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((av_bulk_int_dist / av_E_def_subsurf) / (particle_diameter * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.12023229692111; Max AE: 0.550767736477831
+# c0 + @ * ((av_W_change_H * time) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter * total_metal_loading) * av_E_def_subsurf) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120349171941206; Max AE: 0.592592189478436
+# c0 + @ * ((av_W_change_H * time) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_bulk_int_dist) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120466886338226; Max AE: 0.585434074649378
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_BE_H_subsurf) / (av_bulk_int_dist^6)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.120580213368893; Max AE: 0.57954708714808
+# c0 + @ * ((av_W_change_H * time) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((std_dev + particle_diameter) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121038294091063; Max AE: 0.524418119817642
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_B_0) * (av_E_def_subsurf * av_E_b_C_subsurf)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121160311395669; Max AE: 0.535057153671614
+# c0 + @ * ((av_W_change_H * time) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_E_coh / total_metal_loading) / (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121170893716607; Max AE: 0.548670414433995
+# c0 + @ * ((av_W_change_H * time) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter / av_bulk_int_dist) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121225376966989; Max AE: 0.583215551556399
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_E_coh * av_PE) / (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121492415211659; Max AE: 0.53971017897928
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((total_metal_loading / av_PE) * (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121585743550266; Max AE: 0.553024807097251
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((av_W_change_H * std_dev) + (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121818869259679; Max AE: 0.516770565142555
+# c0 + @ * ((av_W_change_H * time) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter / av_E_coh) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121850385553621; Max AE: 0.587256562648483
+# c0 + @ * ((av_W_change_H * time) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter / av_E_coh) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121853369246908; Max AE: 0.58134858400502
+# c0 + @ * ((av_W_change_H * time) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter * total_metal_loading) * (av_E_def_subsurf / av_IP)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.121873741609209; Max AE: 0.574309124753647
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_bulk_int_dist^6) * (av_mu_C_critical_surf / particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122188125933648; Max AE: 0.514500653536581
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter / av_mu_C_critical_surf) / (av_bulk_int_dist^6)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122205617878722; Max AE: 0.552113166985444
+# c0 + @ * ((av_W_change_H * time) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((particle_diameter * total_metal_loading) * (av_E_def_subsurf / av_IP)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122424912951164; Max AE: 0.57632244600145
+# c0 + @ * ((av_E_def_subsurf * time) / (av_W_change_H^3)) + @ * ((std_dev + particle_diameter) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122451725297249; Max AE: 0.512145763547688
+# c0 + @ * ((av_delta_M1_M2_subsurf * time) / (av_W_change_H^3)) + @ * ((std_dev + particle_diameter) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122583624423597; Max AE: 0.513483440149487
+# c0 + @ * ((time / particle_diameter) / (av_W_change_H^3)) + @ * ((std_dev + particle_diameter) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122700704829454; Max AE: 0.534985681265025
+# c0 + @ * ((time / av_W_change_H) / (|av_d_band_center_surf - av_BE_H_surf|)) + @ * ((av_E_def_subsurf * particle_diameter) / (av_PE * av_IP)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122843914411265; Max AE: 0.5493391742869
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((particle_diameter / av_B_0) * (av_E_def_subsurf * av_mu_C_critical_subsurf)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.122944616487908; Max AE: 0.527592290474458
+# c0 + @ * ((time / av_W_change_H) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((av_E_def_subsurf * particle_diameter) / (av_E_coh * av_PE)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.123019617274273; Max AE: 0.563883142247086
+# c0 + @ * ((time / av_W_change_H) * (av_E_def_subsurf^6)) + @ * ((av_bulk_int_dist / av_E_def_subsurf) / (particle_diameter * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.123096056221576; Max AE: 0.566028474100401
+# c0 + @ * ((time / av_W_change_H) * (av_d_band_center_surf - av_mu_C_critical_surf)) + @ * ((std_dev + particle_diameter) * (av_E_def_subsurf * total_metal_loading)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.123234583730341; Max AE: 0.492263208750825
+# c0 + @ * ((av_W_change_H * time) / (av_d_band_center_surf - av_BE_H_surf)) + @ * ((av_E_coh / total_metal_loading) / (av_E_def_subsurf * particle_diameter)) + @ * (exp(8.420768e-04*((time+3.656118e+02) / (av_BE_H_subsurf+1.381328e+00))))
+# Property Label: $S_{ethylene}$; Unit of the Property: Unitless
+# RMSE: 0.123395506451156; Max AE: 0.542605608352388
+
+

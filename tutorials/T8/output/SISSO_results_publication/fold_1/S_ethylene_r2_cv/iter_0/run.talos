@@ -1,0 +1,29 @@
+#!/bin/bash -l
+# Standard output and error:
+#SBATCH -o ./sisso.out
+#SBATCH -e ./djob.err.%j
+# Initial working directory:
+#SBATCH -D ./
+# Job Name:
+#SBATCH -J si_ac
+# Queue (Partition):
+#SBATCH --partition=p.talos
+# Number of nodes and MPI tasks per node:
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=20
+#SBATCH --mail-type=none
+#SBATCH --mail-user=<userid>@rzg.mpg.de
+# Wall clock limit:
+#SBATCH --time=12:00:00
+
+module purge
+
+ulimit -s unlimited; module load intel/19.1.2 impi/2019.8 mkl/2020.4 boost/1.74
+export LD_LIBRARY_PATH=$I_MPI_ROOT/intel64//lib/:$I_MPI_ROOT/intel64//lib/release/:$INTEL_HOME/compilers_and_libraries_2020/linux/lib/intel64/:$LD_LIBRARY_PATH
+
+
+#module load cmake/3.28 gcc/9 openmpi/4
+
+srun /u/lfoppa/sissopp/bin/sisso++ sisso.json > sisso.out
+
+

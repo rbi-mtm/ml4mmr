@@ -1,0 +1,42 @@
+time input_parsing: 0.055218 s
+Time to generate feat space: 3.65804 s
+Projection time: 0.0915151 s
+Time to get best features on rank : 0.000782967 s
+Complete final combination/selection from all ranks: 0.0230029 s
+Time for SIS: 0.117402 s
+Time for l0-norm: 0.00613809 s
+Projection time: 0.0632288 s
+Time to get best features on rank : 0.000342131 s
+Complete final combination/selection from all ranks: 0.0212479 s
+Time for SIS: 0.0873671 s
+Time for l0-norm: 0.00369811 s
+Projection time: 0.0633709 s
+Time to get best features on rank : 0.000523806 s
+Complete final combination/selection from all ranks: 0.0176601 s
+Time for SIS: 0.0843089 s
+Time for l0-norm: 0.133443 s
+Projection time: 0.063195 s
+Time to get best features on rank : 0.00108004 s
+Complete final combination/selection from all ranks: 0.0159092 s
+Time for SIS: 0.084306 s
+Time for l0-norm: 18.0092 s
+Projection time: 0.066437 s
+Time to get best features on rank : 0.0005548 s
+Complete final combination/selection from all ranks: 0.0165241 s
+Time for SIS: 0.090066 s
+Time for l0-norm: 2938.55 s
+Train RMSE: 0.0154531 Unitless; Test RMSE: 0.0157621 Unitless
+c0 + a0 * (exp(2.344651e+01*(av_W_change_H * (particle_diameter-5.925283e+00))))
+
+Train RMSE: 0.0104613 Unitless; Test RMSE: 0.0119027 Unitless
+c0 + a0 * (exp(5.614590e+02*(av_E_coh * (av_bulk_int_dist-2.677805e+00)))) + a1 * ((av_B_0 / av_EA) / (av_mu_C_critical_surf + av_EA))
+
+Train RMSE: 0.00844873 Unitless; Test RMSE: 0.00882305 Unitless
+c0 + a0 * ((ln(1.0*time+3.637717e+00)) * (total_metal_loading / av_BE_H_surf)) + a1 * (exp(5.614590e+02*(av_E_coh * (av_bulk_int_dist-2.677805e+00)))) + a2 * ((av_B_0 / av_EA) / (av_mu_C_critical_surf + av_EA))
+
+Train RMSE: 0.00708961 Unitless; Test RMSE: 0.00950483 Unitless
+c0 + a0 * (|(ln(1.0*time+3.637717e+00)) - (av_E_b_C_subsurf / av_EA)|) + a1 * ((av_mu_C_critical_subsurf * time) / (ln(1.0*av_BE_H_surf+2.635000e+00))) + a2 * (exp(5.614590e+02*(av_E_coh * (av_bulk_int_dist-2.677805e+00)))) + a3 * ((av_mu_C_critical_surf + av_EA) * (av_EA / av_B_0))
+
+Train RMSE: 0.00601398 Unitless; Test RMSE: 0.00757356 Unitless
+c0 + a0 * ((ln(1.0*av_mu_C_critical_surf+6.010000e+00)) * (av_EA / time)) + a1 * (|(av_mu_C_critical_surf / av_EA) - (av_IP / av_BE_H_subsurf)|) + a2 * (cbrt(time) * (total_metal_loading / av_E_b_C_subsurf)) + a3 * ((av_B_0 * std_dev) / (av_mu_C_critical_subsurf + av_IP)) + a4 * (exp(5.614590e+02*(av_E_coh * (av_bulk_int_dist-2.677805e+00))))
+

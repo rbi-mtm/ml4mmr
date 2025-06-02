@@ -1,0 +1,31 @@
+{
+  "type" : "productWorkScheme",
+  "id" : "std_dev",
+  "workspaces" : [ {
+    "type" : "workspaceFromXarf",
+    "id" : "std_dev",
+    "datafile" : "std_dev.xarf",
+    "propScheme" : {
+      "type" : "standardPropScheme",
+      "defaultMetricRule" : {
+        "type" : "kmeansPropRule",
+        "numberOfCutoffs" : 20,
+        "maxNumberOfIterations" : 1000
+      }
+    }
+  } ],
+  "computations" : [ {
+    "type" : "legacyComputation",
+    "id" : "subgroup_analysis",
+    "algorithm" : "PMM_SAMPLER",
+    "parameters" : {
+      "num_seeds" : "50000",
+      "dev_measure" : "",
+      "cov_weight" : "1.0",
+      "attr_filter" : "[]",
+      "num_res" : "5000",
+      "targets" : "[X_acetylene]"
+    }
+  } ],
+  "computationTimeLimit" : 3600000
+}

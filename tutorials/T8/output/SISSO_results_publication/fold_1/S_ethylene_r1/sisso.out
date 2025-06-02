@@ -1,0 +1,42 @@
+time input_parsing: 0.0966709 s
+Time to generate feat space: 0.353249 s
+Projection time: 0.0402181 s
+Time to get best features on rank : 0.000845909 s
+Complete final combination/selection from all ranks: 0.019124 s
+Time for SIS: 0.060849 s
+Time for l0-norm: 0.0286691 s
+Projection time: 0.00104403 s
+Time to get best features on rank : 0.000749826 s
+Complete final combination/selection from all ranks: 0.0164189 s
+Time for SIS: 0.019624 s
+Time for l0-norm: 0.00437284 s
+Projection time: 0.000209093 s
+Time to get best features on rank : 0.00122809 s
+Complete final combination/selection from all ranks: 0.014735 s
+Time for SIS: 0.018532 s
+Time for l0-norm: 0.180559 s
+Projection time: 0.000213861 s
+Time to get best features on rank : 0.000459909 s
+Complete final combination/selection from all ranks: 0.011363 s
+Time for SIS: 0.0152891 s
+Time for l0-norm: 25.6832 s
+Projection time: 0.000293016 s
+Time to get best features on rank : 0.000521183 s
+Complete final combination/selection from all ranks: 0.012404 s
+Time for SIS: 0.0172851 s
+Time for l0-norm: 3829.86 s
+Train RMSE: 0.273324 Unitless; Test RMSE: 0.261884 Unitless
+c0 + a0 * (av_BE_H_subsurf * av_mu_C_critical_surf)
+
+Train RMSE: 0.210591 Unitless; Test RMSE: 0.196447 Unitless
+c0 + a0 * (std_dev * time) + a1 * (av_BE_H_subsurf * av_mu_C_critical_surf)
+
+Train RMSE: 0.166915 Unitless; Test RMSE: 0.152781 Unitless
+c0 + a0 * (std_dev / av_EA) + a1 * (av_E_def_subsurf * time) + a2 * (av_BE_H_subsurf^2)
+
+Train RMSE: 0.142129 Unitless; Test RMSE: 0.153377 Unitless
+c0 + a0 * (time / av_W_change_H) + a1 * (av_E_def_subsurf * time) + a2 * (av_delta_M1_M2_subsurf * std_dev) + a3 * (av_E_b_C_subsurf * av_mu_C_critical_surf)
+
+Train RMSE: 0.10999 Unitless; Test RMSE: 0.112911 Unitless
+c0 + a0 * (particle_diameter * time) + a1 * (total_metal_loading * time) + a2 * (time / av_E_def_subsurf) + a3 * (av_BE_H_surf * std_dev) + a4 * (1.0 / av_BE_H_subsurf)
+

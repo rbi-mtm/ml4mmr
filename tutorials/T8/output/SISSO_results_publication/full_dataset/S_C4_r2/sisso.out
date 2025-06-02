@@ -1,0 +1,42 @@
+time input_parsing: 0.049701 s
+Time to generate feat space: 5.30813 s
+Projection time: 0.121986 s
+Time to get best features on rank : 0.00111699 s
+Complete final combination/selection from all ranks: 0.025466 s
+Time for SIS: 0.150823 s
+Time for l0-norm: 0.00874901 s
+Projection time: 0.0918279 s
+Time to get best features on rank : 0.00056386 s
+Complete final combination/selection from all ranks: 0.0224609 s
+Time for SIS: 0.117659 s
+Time for l0-norm: 0.00638604 s
+Projection time: 0.0916872 s
+Time to get best features on rank : 0.000762939 s
+Complete final combination/selection from all ranks: 0.018111 s
+Time for SIS: 0.113855 s
+Time for l0-norm: 0.205219 s
+Projection time: 0.091902 s
+Time to get best features on rank : 0.0021019 s
+Complete final combination/selection from all ranks: 0.0205269 s
+Time for SIS: 0.121699 s
+Time for l0-norm: 30.3965 s
+Projection time: 0.0980251 s
+Time to get best features on rank : 0.00104094 s
+Complete final combination/selection from all ranks: 0.020267 s
+Time for SIS: 0.125721 s
+Time for l0-norm: 4130.46 s
+Train RMSE: 0.0160471 Unitless
+c0 + a0 * (exp(5.264646e+01*(av_W_change_H * (particle_diameter-5.891972e+00))))
+
+Train RMSE: 0.0108819 Unitless
+c0 + a0 * ((ln(1.0*av_EA-8.326824e-01)) / (av_d_band_center_surf - av_BE_H_surf)) + a1 * ((av_EA / av_BE_H_subsurf) * (av_mu_C_critical_subsurf + av_EA))
+
+Train RMSE: 0.00865037 Unitless
+c0 + a0 * ((ln(1.0*time-4.044973e+00)) / (av_BE_H_surf * surface_area)) + a1 * ((av_delta_M1_M2_subsurf^6) / (av_d_band_center_surf - av_BE_H_surf)) + a2 * ((av_bulk_int_dist / av_EA) * (av_E_def_subsurf + av_EA))
+
+Train RMSE: 0.00719941 Unitless
+c0 + a0 * ((ln(1.0*av_BE_H_subsurf+2.140000e+00)) / (total_metal_loading * time)) + a1 * ((ln(1.0*time-4.044973e+00)) / (av_BE_H_surf * surface_area)) + a2 * ((ln(1.0*av_EA-8.326824e-01)) / (av_d_band_center_surf - av_BE_H_surf)) + a3 * (exp(5.264646e+01*(av_W_change_H * (particle_diameter-5.891972e+00))))
+
+Train RMSE: 0.0061707 Unitless
+c0 + a0 * ((av_d_band_center_surf + av_mu_C_critical_surf) / (av_E_def_subsurf * particle_diameter)) + a1 * (sqrt(av_PE) / (av_E_def_subsurf * particle_diameter)) + a2 * ((ln(1.0*av_mu_C_critical_surf+6.010000e+00)) * (av_EA / time)) + a3 * ((ln(1.0*time-4.044973e+00)) / (av_B_0 * surface_area)) + a4 * ((av_EA / av_E_def_subsurf) / (av_bulk_int_dist^6))
+

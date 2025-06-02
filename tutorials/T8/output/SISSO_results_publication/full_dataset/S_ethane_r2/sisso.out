@@ -1,0 +1,42 @@
+time input_parsing: 0.0882781 s
+Time to generate feat space: 5.27127 s
+Projection time: 0.131599 s
+Time to get best features on rank : 0.000959158 s
+Complete final combination/selection from all ranks: 0.0257521 s
+Time for SIS: 0.160497 s
+Time for l0-norm: 0.00794983 s
+Projection time: 0.090627 s
+Time to get best features on rank : 0.000895977 s
+Complete final combination/selection from all ranks: 0.022429 s
+Time for SIS: 0.116639 s
+Time for l0-norm: 0.00432181 s
+Projection time: 0.090476 s
+Time to get best features on rank : 0.000841856 s
+Complete final combination/selection from all ranks: 0.0166869 s
+Time for SIS: 0.111309 s
+Time for l0-norm: 0.199274 s
+Projection time: 0.0904112 s
+Time to get best features on rank : 0.000658035 s
+Complete final combination/selection from all ranks: 0.0178969 s
+Time for SIS: 0.11418 s
+Time for l0-norm: 27.0151 s
+Projection time: 0.0932598 s
+Time to get best features on rank : 0.000766993 s
+Complete final combination/selection from all ranks: 0.0170541 s
+Time for SIS: 0.117854 s
+Time for l0-norm: 4062.81 s
+Train RMSE: 0.197754 Unitless
+c0 + a0 * (exp(2.737881e-03*((time+7.130439e+02) / (av_mu_C_critical_surf+4.051989e+00))))
+
+Train RMSE: 0.14358 Unitless
+c0 + a0 * ((std_dev + particle_diameter) * (av_E_def_subsurf / av_PE)) + a1 * (exp(1.266464e-03*((time+6.777928e+02) / (av_BE_H_subsurf+1.225554e+00))))
+
+Train RMSE: 0.125759 Unitless
+c0 + a0 * ((surface_area / time) * (av_delta_M1_M2_subsurf^6)) + a1 * ((std_dev + particle_diameter) * (av_E_def_subsurf / av_PE)) + a2 * (exp(1.266464e-03*((time+6.777928e+02) / (av_BE_H_subsurf+1.225554e+00))))
+
+Train RMSE: 0.111722 Unitless
+c0 + a0 * ((av_mu_C_critical_subsurf * surface_area) / (av_E_def_subsurf * total_metal_loading)) + a1 * ((particle_diameter / time) * (av_E_def_subsurf^6)) + a2 * ((std_dev + particle_diameter) * (av_E_def_subsurf / av_PE)) + a3 * (exp(1.266464e-03*((time+6.777928e+02) / (av_BE_H_subsurf+1.225554e+00))))
+
+Train RMSE: 0.0928501 Unitless
+c0 + a0 * ((av_PE * time) / (av_d_band_center_surf^6)) + a1 * ((av_bulk_int_dist * time) / (av_d_band_center_surf^6)) + a2 * ((surface_area / time) * (av_delta_M1_M2_subsurf^6)) + a3 * ((av_E_def_subsurf * std_dev) / sqrt(surface_area)) + a4 * (exp(1.266464e-03*((time+6.777928e+02) / (av_BE_H_subsurf+1.225554e+00))))
+

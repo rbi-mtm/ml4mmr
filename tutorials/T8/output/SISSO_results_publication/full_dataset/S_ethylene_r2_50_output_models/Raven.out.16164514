@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: lfoppa(30900)
+Job name:  SISSO
+Node list: ravl[1013,1035]
+Job start: Tue Mar 11 19:37:22 CET 2025
+Job end:   Tue Mar 11 19:49:29 CET 2025
+Work dir:  /u/lfoppa/Acetylene-KoFo/S_ethylene_r2_50mod/./
+Command:   /raven/u/lfoppa/Acetylene-KoFo/S_ethylene_r2_50mod/run.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+16164514           SISSO      2           288                             00:12:07      0:0
+16164514.0       sisso++      2    144    288      129.96M      128.87M   00:12:02      0:0
+  
+Maximum memory per node: 9.811722 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 192.8 %
+  

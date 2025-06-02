@@ -1,0 +1,37 @@
+{
+    "desc_dim": 5,
+    "n_sis_select": 50,
+    "max_rung": 2,
+    "n_rung_store": 1,
+    "n_residual": 5,
+    "min_abs_feat_val": 1e-06,
+    "max_abs_feat_val": 1000000.0,
+    "data_file": "train.dat",
+    "property_key": "S_C4",
+    "n_rung_generate": 0,
+    "leave_out_inds": "[]",
+    "n_models_store": 10,
+    "opset": [
+        "add",
+        "sub",
+        "abs_diff",
+        "mult",
+        "div",
+        "inv",
+        "exp",
+        "sq",
+        "cb",
+        "sqrt",
+        "cbrt",
+        "log",
+        "abs",
+        "six_pow",
+        "neg_exp"
+    ],
+    "param_opset": [
+        "exp",
+        "log"
+    ],
+    "global_param_opt": "True",
+    "calc_type": "regression"
+}
