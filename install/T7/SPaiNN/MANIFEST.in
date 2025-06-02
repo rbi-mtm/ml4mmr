@@ -1,4 +1,0 @@
-recursive-include src/spainn *.py
-recursive-include src/spainn *.yaml
-global-exclude *.pyc
-global-exclude __pycache__

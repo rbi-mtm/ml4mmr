@@ -1,3 +1,0 @@
-ema:
-    _target_: schnetpack.train.ExponentialMovingAverage
-    decay: 0.75

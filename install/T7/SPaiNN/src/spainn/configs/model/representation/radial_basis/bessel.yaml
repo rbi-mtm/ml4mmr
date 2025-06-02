@@ -1,3 +1,0 @@
-_target_: schnetpack.nn.radial.BesselRBF
-n_rbf: 20
-cutoff: ${globals.cutoff}
