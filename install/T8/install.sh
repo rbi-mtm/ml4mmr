@@ -102,7 +102,7 @@ T_NO=$(basename "$T_PATH")
 
 ### Install
 
-conda create -y -n $T_NO -c conda-forge -c anaconda ipykernel -c bioconda java-jdk
+conda create -y -n $T_NO -c conda-forge -c anaconda -c bioconda ipykernel java-jdk
 
 source $CONDA_BASE_PREFIX/bin/activate $T_NO
 python -m ipykernel install $IPYKERNEL_MODE --name=$T_NO
