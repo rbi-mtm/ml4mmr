@@ -1,1 +1,2 @@
 git+https://github.com/JonathanSchmidt1/HT-Tutorial@main
+pymatviz==0.15.0
