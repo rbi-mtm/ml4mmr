@@ -1,0 +1,18 @@
+JOB_STORE:
+  docs_store:
+    type: MongoStore
+    database: mongodb
+    host: INSERT_IP_HERE
+    port: 27017
+    username: user
+    password: pass
+    collection_name: outputs
+  additional_stores:
+    data:
+      type: GridFSStore
+      database: mongodb
+      host: INSERT_IP_HERE
+      port: 27017
+      username: user
+      password: pass
+      collection_name: outputs_blobs
