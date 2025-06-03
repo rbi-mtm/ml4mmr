@@ -1,0 +1,10 @@
+#include "martini_mod.itp"
+
+[ system ]
+; name
+Mixture of water and hexane
+
+[ molecules ]
+; name  number
+HEX      50
+W        80

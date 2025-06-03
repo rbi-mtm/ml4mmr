@@ -1,0 +1,23 @@
+#include "../../../martini_mod.itp"
+
+[moleculetype]
+; molname  nrexcl
+  Ligand   1
+
+[atoms]
+; id  type  resnr  residu  atom  cgnr  charge
+  1   B1    1      LIG     A1    1     0
+  2   B2    1      LIG     A2    2     0
+
+[bonds]
+; i j   funct  length  force.c.
+  1 2   1      0.3     10000
+
+[ system ]
+; name
+Water with Ligand
+
+[ molecules ]
+; name  number
+W        160
+Ligand   1
