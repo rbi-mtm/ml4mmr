@@ -25,7 +25,7 @@ TODO - Write general introduction
 
 | Day | Time  | Lecturer                     | Kernel / Environment |
 | --- | ----- | ---------------------------  | -------------------- |
-| Mon | 16:15 | Nicola Molinari              | TODO / T1            |
+| Mon | 16:15 | Nicola Molinari              | [T1](tutorials/T1)   |
 | Tue | 09:45 | Ilyes Batatia                | [T2](tutorials/T2)   |
 | Tue | 12:00 | Jonathan Schmidt             | [T3](tutorials/T3)   |
 | Tue | 16:15 | Tristan Bereau & Luis Walter | [T4](tutorials/T4)   |
