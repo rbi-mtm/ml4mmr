@@ -119,7 +119,7 @@ then
         export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH 
 
         # Install openmpi-dev
-        apt-get install libopenmpi-dev
+        apt-get -y install libopenmpi-dev
 
         # Remember current directory
         START_DIRECTORY=$(pwd)
