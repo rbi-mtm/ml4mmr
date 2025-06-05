@@ -3,5 +3,6 @@ nglview
 ipywidgets
 rdkit
 x3dase
+scikit-image
 numpy == 2.0
-aseMolec @ git+https://github.com/imagdau/aseMolec@main
+aseMolec @ git+https://github.com/imagdau/aseMolec@3b1667abd2e4b061aa9f2e910634d38e17fe4779
