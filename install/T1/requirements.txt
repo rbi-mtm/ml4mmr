@@ -1,0 +1,4 @@
+wandb
+torch==2.5.1
+git+https://github.com/mir-group/allegro@v0.3.0
+mkl-include
