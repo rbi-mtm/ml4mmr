@@ -6,4 +6,6 @@ torch
 scikit-learn
 rdkit
 alchemlyb
-MDAnalysis
+mdanalysis
+nglview
+seaborn
