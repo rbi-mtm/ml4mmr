@@ -139,7 +139,7 @@ then
 
         # Get libtorch
         wget https://download.pytorch.org/libtorch/cu124/libtorch-cxx11-abi-shared-with-deps-2.5.1%2Bcu124.zip
-        unzip libtorch-cxx11-abi-shared-with-deps-2.5.1+cu124.zip
+        unzip -q -o libtorch-cxx11-abi-shared-with-deps-2.5.1+cu124.zip
         rm libtorch-cxx11-abi-shared-with-deps-2.5.1+cu124.zip
         LIBTORCH_PATH=$(realpath libtorch)
 
