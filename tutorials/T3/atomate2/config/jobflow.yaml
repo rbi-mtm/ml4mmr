@@ -1,7 +1,7 @@
 JOB_STORE:
   docs_store:
     type: MongoStore
-    database: mongodb
+    database: admin
     host: INSERT_IP_HERE
     port: 27017
     username: user
@@ -10,7 +10,7 @@ JOB_STORE:
   additional_stores:
     data:
       type: GridFSStore
-      database: mongodb
+      database: admin
       host: INSERT_IP_HERE
       port: 27017
       username: user

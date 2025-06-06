@@ -1,5 +1,5 @@
-host: mongodb://user:pass@INSERT_IP_HERE:27017
-name: mongodb
+host: mongodb://user:pass@INSERT_IP_HERE:27017/admin?authSource=admin
+name: admin
 logdir: null
 Istrm_lvl: DEBUG
 uri_mode: True
