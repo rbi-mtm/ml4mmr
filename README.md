@@ -16,6 +16,7 @@ This repository contains the tutorials held at **ML4MMR**.
     
  4. [Running the Tutorials](#4-running-the-tutorials)
  5. [Installation](#5-installation)
+ 6. [Common Issues](#6-common-issues)
 
 ## 1. Introduction
 
@@ -51,6 +52,7 @@ the instructions on [Running the Tutorials](#4-running-the-tutorials).
 > If you encounter any issues while setting up, please send a message through the school Slack workspace
 or to [juraj.ovcar@gmail.com](mailto:juraj.ovcar@gmail.com).
 
+***
 ### 3.1. Login to JupyterHub
 
 > [!Important]
@@ -66,6 +68,7 @@ After accepting the invitation:
  3. Select the ``School on Machine Learning for Molecules and Materials Research`` server option and click ``Start``
  4. If successful, proceed to [Running the Tutorials](4-running-the-tutorials)
 
+***
 ### 3.2. Local Installation
 
 If you wish to install the softtware and run the tutorials on your own machine, read the chapter on [Installation](5-installation).
@@ -133,4 +136,41 @@ cd ml4mmr/install/T2
 sudo -s
 source /path/to/conda/bin/activate base
 source install.sh -p /usr/local
+```
+
+## 6. Common Issues
+
+> [!WARNING]
+>
+> The most common issue is getting a ``ModuleNotFound`` error while running a tutorial.
+>
+> Check if you selected the correct [Jupyter kernel](4-running-the-tutorials). If you still encounter ``ModuleNotFound``, report this to the organizers.
+>
+> Let's say you have an issue with tutorial [T3](tutorials/T3). A possible fix is to open up a ``Terminal`` and run:
+>
+> ```bash
+> source /opt/conda/bin/activate base
+> conda activate T3
+> sudo pip install missing_module
+> ```
+>
+> After the ``pip`` installation, in JupyterLab, click on ``Kernel`` &rarr; ``Restart Kernel``.
+
+***
+
+Other common issues:
+
+> I started my server on [https://jupyter.srce.hr](https://jupyter.srce.hr) but it takes very long to start up. I'm even seeing a ``Timeout`` error.
+
+- The server is downloading an updated container image. Wait for 5-10 minutes and try again.
+
+
+> I'm running ``git clone https://github.com/rbi-mtm/ml4mmr`` and it's stuck at ``Updating...``
+
+- You forgot to run ``git-lfs install``. Press ``Ctrl+C`` and run:
+
+```bash
+rm -rf ml4mmr
+git-lfs install
+git clone https://github.com/rbi-mtm/ml4mmr
 ```
