@@ -146,7 +146,7 @@ source install.sh -p /usr/local
 >
 > Check if you selected the correct [Jupyter kernel](4-running-the-tutorials). If you still encounter ``ModuleNotFound``, report this to the organizers.
 >
-> Let's say you have an issue with tutorial [T3](tutorials/T3). A possible fix is to open up a ``Terminal`` and run:
+> If the issue persists after selecting the correct kernel, a possible fix is to open up a ``Terminal`` and run the following (replace T3 with the tutorial you have an issue with):
 >
 > ```bash
 > source /opt/conda/bin/activate base
