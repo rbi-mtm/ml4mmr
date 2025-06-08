@@ -21,7 +21,8 @@ This repository contains the tutorials held at **ML4MMR**.
 ## 1. Introduction
 
 First, read the chapter on [Setting Up](#3-setting-up). Once done, proceed to
-the instructions on [Running the Tutorials](#4-running-the-tutorials).
+the instructions on [Running the Tutorials](#4-running-the-tutorials). Some
+frequently encountered issues are listed in [Common Issues](#6-common-issues).
 
 > [!TIP]
 > Some participants might not be able to [login](#31-login-to-jupyterhub)
