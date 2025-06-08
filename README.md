@@ -12,14 +12,23 @@ This repository contains the tutorials held at **ML4MMR**.
     
     3.1. [Login to JupyterHub](#31-login-to-jupyterhub)
     
-    3.2. [Install the Virtual Machine](#32-install-the-virtual-machine)
+    3.2. [Local Installation](#32-local-installation)
     
- 5. [Running the Tutorials](#4-running-the-tutorials)
- 6. [Installation](#5-installation)
+ 4. [Running the Tutorials](#4-running-the-tutorials)
+ 5. [Installation](#5-installation)
 
 ## 1. Introduction
 
-TODO - Write general introduction
+First, read the chapter on [Setting Up](#3-setting-up). Once done, proceed to
+the instructions on [Running the Tutorials](#4-running-the-tutorials).
+
+> [!TIP]
+> Some participants might not be able to [login](#31-login-to-jupyterhub)
+> or might not be able to [run the tutorials](#4-running-the-tutorials) due
+> to a technical issue.
+>
+> Therefore, we encourage you to work in groups.
+> Be collegial and share both knowledge and technical resources!
 
 ## 2. Tutorials Schedule
 
@@ -29,32 +38,54 @@ TODO - Write general introduction
 | Tue | 09:45 | Ilyes Batatia                | [T2](tutorials/T2)   |
 | Tue | 12:00 | Jonathan Schmidt             | [T3](tutorials/T3)   |
 | Tue | 16:15 | Tristan Bereau & Luis Walter | [T4](tutorials/T4)   |
-| Wed | 09:45 | Martin Uhrin                 | TODO / T5            |
+| Wed | 09:45 | Martin Uhrin                 | T5                   |
 | Wed | 16:15 | Milica Todorović             | [T6](tutorials/T6)   |
 | Thu | 09:45 | Johannes Dietschreit         | [T7](tutorials/T7)   |
 | Thu | 12:00 | Lucas Foppa                  | [T8](tutorials/T8)   |
-| Fri | 09:45 | Robert Pinsler               | TODO / T9            |
+| Fri | 09:45 | Robert Pinsler               | T9                   |
 | Fri | 12:00 | Andrés M Bran                | [T10](tutorials/T10) |
 
 ## 3. Setting Up
 
-TODO - Insert intro to setting up
+> [!TIP]
+> If you encounter any issues while setting up, please send a message through the school Slack workspace
+or to [juraj.ovcar@gmail.com](mailto:juraj.ovcar@gmail.com).
 
 ### 3.1. Login to JupyterHub
 
-TODO - Insert instructions on how to login to JupyterHub.
+> [!Important]
+> You should have received an invitation link from the domain [srce.hr](srce.hr).
+>
+> If you have not received the invitation or encounter issues with logging in
+> through [eduGAIN](https://edugain.org/), immediately contact the organizers.
 
-### 3.2. Install the Virtual Machine
+After accepting the invitation:
 
-TODO - Insert instructions on how to install the virtual machine.
+ 1. Open [https://jupyter.srce.hr](https://jupyter.srce.hr) in your browser
+ 2. Click on ``Prijava putem eduGAIN/AAI@EduHr`` and login
+ 3. Select the ``School on Machine Learning for Molecules and Materials Research`` server option and click ``Start``
+ 4. If successful, proceed to [Running the Tutorials](4-running-the-tutorials)
+
+### 3.2. Local Installation
+
+If you wish to install the softtware and run the tutorials on your own machine, read the chapter on [Installation](5-installation).
 
 ## 4. Running the Tutorials
 
- 1. [Login to JupyterHub](#31-login-to-jupyterhub) or start a JupyterLab instance locally/in your [Virtual Machine](#32-install-the-virtual-machine)
- 2. Using the [Tutorials Schedule](#2-tutorials-schedule), identify to which Kernel / Environment the current tutorial corresponds to
- 3. Locate the tutorial Jupyter Notebook in the [tutorials](tutorials) directory and open it
- 4. In JupyterLab, click ``Kernel`` &rarr; ``Change Kernel`` and select the kernel for the tutorial
- 5. Enjoy the tutorial!
+> [!IMPORTANT]
+> When logging in for the first time, you must first download the tutorials.
+>
+> In the Launcher tab, scroll down and click on ``Terminal``. Type in the following commands:
+>
+> ```bash
+> git-lfs install
+> git clone https://github.com/rbi-mtm/ml4mmr
+> ```
+
+ 1. Using the [Tutorials Schedule](#2-tutorials-schedule), identify to which Kernel / Environment the current tutorial corresponds to
+ 2. Locate the tutorial Jupyter Notebook in the [tutorials](tutorials) directory and open it
+ 3. In JupyterLab, click ``Kernel`` &rarr; ``Change Kernel`` and select the kernel for the tutorial
+ 4. Enjoy the tutorial!
 
 ## 5. Installation
 
@@ -64,6 +95,7 @@ necessary to run the tutorials. System requirements will be added as necessary.
 First, clone this repository:
 
 ```bash
+git-lfs install
 git clone https://github.com/rbi-mtm/ml4mmr
 ```
 
