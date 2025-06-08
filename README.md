@@ -25,7 +25,7 @@ the instructions on [Running the Tutorials](#4-running-the-tutorials).
 
 > [!TIP]
 > Some participants might not be able to [login](#31-login-to-jupyterhub)
-> or might not be able to [run the tutorials](#4-running-the-tutorials) due
+> or [run the tutorials](#4-running-the-tutorials) due
 > to a technical issue.
 >
 > Therefore, we encourage you to work in groups.
