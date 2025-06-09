@@ -156,7 +156,7 @@ source install.sh -p /usr/local
 > ```bash
 > source /opt/conda/bin/activate base
 > conda activate T3
-> sudo pip install missing_module
+> pip install missing_module
 > ```
 >
 > After the ``pip`` installation, in JupyterLab, click on ``Kernel`` &rarr; ``Restart Kernel``.
