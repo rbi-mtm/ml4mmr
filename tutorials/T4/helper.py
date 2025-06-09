@@ -42,7 +42,7 @@ def run_molecule_simulations(molecule: str, delete_on_failure: bool = False):
                 f'-po {system_path}/equilibration.out.mdp >> {system_path}/simulation.run.log 2>&1 ' +
                 f'&& gmx mdrun -deffnm {system_path}/equilibration  -ntmpi 1 ' +
                 f'>> {system_path}/simulation.run.log 2>&1')
-            print(f'Running simulation 1/9 for the {system} environment', end='\r')
+            print(f'Running simulation 1/9 in {system}', end='\r')
             run(command, shell=True, check=True)
             """ Adjust the number of integration steps depending on the environment. """
             command = 'sed -i "s/^nsteps.*/nsteps                   = {nsteps}/" lambda-run.mdp'
@@ -61,7 +61,7 @@ def run_molecule_simulations(molecule: str, delete_on_failure: bool = False):
                     f'-po {lambda_path}/production.out.mdp >> {lambda_path}/simulation.run.log 2>&1 ' +
                     f'&& gmx mdrun -deffnm {lambda_path}/production -ntmpi 1 ' +
                     f'>> {lambda_path}/simulation.run.log 2>&1')
-                print(f'Running simulation {i+2}/9 for the {system} environment', end='\r')
+                print(f'Running simulation {i+2}/9 in {system}', end='\r')
                 run(command, shell=True, check=True)
     except Exception as e:
         if delete_on_failure:
