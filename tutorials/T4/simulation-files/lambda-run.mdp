@@ -1,7 +1,7 @@
 ; General setup
 integrator               = sd
 dt                       = 0.02
-nsteps                   = 30000
+nsteps                   = 20000
 ; Output
 nstxout                  = 0
 nstvout                  = 0
@@ -46,6 +46,6 @@ sc-sigma                 = 0.3
 couple-intramol          = no
 couple-lambda0           = vdw
 couple-lambda1           = none
-init-lambda-state        = 7
+init-lambda-state        = 1
 vdw-lambdas              = 0.000 0.143 0.286 0.429 0.571 0.714 0.857 1.000
 calc-lambda-neighbors    = -1
