@@ -1,0 +1,85 @@
+
+r_max: ???
+
+module:
+  _target_: tensorial.ReaxModule
+
+  optimizer:
+    _partial_: True
+    _target_: optax.adam
+    learning_rate: 0.001
+
+
+  loss_fn:
+    _target_: tensorial.gcnn.WeightedLoss
+    weights: [ 1000.]
+    loss_fns:
+      - _target_: tensorial.gcnn.Loss
+        field: nodes.predicted_born_charges
+        target_field: nodes.born_charges
+
+  model:
+    _target_: tensorial.nn.Sequential
+    layers:
+      - _target_: tensorial.gcnn.atomic.SpeciesTransform
+        atomic_numbers: [ 8, 22, 56 ]
+
+      - _target_: tensorial.gcnn.NodewiseEncoding
+        attrs:
+          species:
+            _target_: tensorial.tensors.OneHot
+            num_classes: 3
+          globals.external_electric_field:
+            _target_: tensorial.tensors.AsIrreps
+            irreps: 1x1e
+
+      - _target_: tensorial.gcnn.EdgeVectors
+
+      - _target_: tensorial.gcnn.EdgewiseEncoding
+        attrs:
+          edge_vectors:
+            _target_: tensorial.tensors.SphericalHarmonic
+            irreps: 0e + 1o
+            normalise: True
+
+      - _target_: tensorial.gcnn.RadialBasisEdgeEncoding
+        r_max: ${r_max}
+
+      - _target_: tensorial.gcnn.NodewiseLinear
+        field: attributes
+        irreps_out: 16x0o + 16x0e + 16x1o + 16x1e
+
+      - _target_: tensorial.gcnn.NequipLayer
+        irreps_out: 16x0o + 16x0e + 16x1o + 16x1e
+        avg_num_neighbours: 40.0
+
+      - _target_: tensorial.gcnn.NequipLayer
+        irreps_out: 16x0o + 16x0e + 16x1o + 16x1e
+        avg_num_neighbours: 40.0
+
+      - _target_: tensorial.gcnn.NequipLayer
+        irreps_out: 16x0o + 16x0e + 16x1o + 16x1e
+        avg_num_neighbours: 40.0
+
+      # Keep only scalars and reduce the number passing this point
+      - _target_: tensorial.gcnn.NodewiseLinear
+        irreps_out: 4x0e + 4x0o + 4x1e + 4x1o + 4x2e + 4x2o + 2x3o + 2x3e
+
+      # Per-atom Born effective charge tensor
+      - _target_: tensorial.gcnn.NodewiseLinear
+        irreps_out: 1x0e + 1x1e + 1x2e
+        out_field: predicted_born_charges
+
+      # Per-atom Born effective charge tensor
+      - _target_: tensorial.gcnn.NodewiseLinear
+        irreps_out: 1x0e + 1x1e + 1x2e
+        out_field: predicted_born_charges
+
+      - _target_: tensorial.gcnn.NodewiseDecoding
+        in_field: predicted_born_charges
+        attrs:
+          predicted_born_charges:
+            _target_: tensorial.CartesianTensor
+            formula: ij
+            i: 1o
+            j: 1o
