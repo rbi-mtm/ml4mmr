@@ -3,7 +3,7 @@ run:
   data_dir: ${run.work_dir}/data
   path: ${run.work_dir}/runs
   experiment: methylenimmonium
-  id: johannes_schnet
+  id: johannes_schnet2
   ckpt_path: null
 globals:
   model_path: best_model
@@ -114,7 +114,7 @@ model:
       cutoff: ${globals.cutoff}
     _target_: schnetpack.representation.SchNet
     n_atom_basis: 256
-    n_interactions: 6
+    n_interactions: 3
     cutoff_fn:
       _target_: schnetpack.nn.cutoff.CosineCutoff
       cutoff: ${globals.cutoff}
