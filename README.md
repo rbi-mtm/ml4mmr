@@ -40,7 +40,7 @@ frequently encountered issues are listed in [Common Issues](#6-common-issues).
 | Tue | 09:45 | Ilyes Batatia                | [T2](tutorials/T2)   | [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZrTuTvavXiCxTFyjBV4GqlARxgFwYAtX) [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oCSVfMhWrqHTeHbKgUSQN9hTKxLzoNyb)  |
 | Tue | 12:00 | Jonathan Schmidt             | [T3](tutorials/T3)   | |
 | Tue | 16:15 | Tristan Bereau & Luis Walter | [T4](tutorials/T4)   | [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jcS-q8DnS6O4n4BLS4yvldE5yMbOFDcY?usp=sharing) |
-| Wed | 09:45 | Martin Uhrin                 | T5                   | |
+| Wed | 09:45 | Martin Uhrin                 | [T5](tutorials/T5)   | [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Q_qqTultR3T7YisoNnTBXWBm8reXQ6JL?usp=sharing) [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XX5Qx47CqnGIFC0IJxMSw_uH-N14Je1m?usp=sharing) |
 | Wed | 16:15 | Milica Todorović             | [T6](tutorials/T6)   | [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Vy4iTuIyvOh37pbuI4OeO1YTUmpm-hz#sandboxMode=true)  [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18SR3N0N9HaVXNu76F-wXk8Y5ZJ1N0q_b?usp=sharing) |
 | Thu | 09:45 | Johannes Dietschreit         | [T7](tutorials/T7)   | |
 | Thu | 12:00 | Lucas Foppa                  | [T8](tutorials/T8)   | |
