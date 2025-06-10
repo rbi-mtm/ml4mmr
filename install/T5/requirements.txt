@@ -1,0 +1,6 @@
+tensorial@git+https://github.com/camml-lab/tensorial.git@a129b31d2aa1feb0bc8b1eeb867d9207912689b7
+e3response@git+https://github.com/camml-lab/e3response.git@92a02afa6923d0efda2f9c2173c6ca27f1980d59
+pandas
+seekpath
+requests
+jax[cuda12]
