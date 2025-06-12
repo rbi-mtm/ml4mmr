@@ -44,7 +44,7 @@ frequently encountered issues are listed in [Common Issues](#6-common-issues).
 | Wed | 16:15 | Milica Todorović             | [T6](tutorials/T6)   | [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Vy4iTuIyvOh37pbuI4OeO1YTUmpm-hz#sandboxMode=true)  [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18SR3N0N9HaVXNu76F-wXk8Y5ZJ1N0q_b?usp=sharing) |
 | Thu | 09:45 | Johannes Dietschreit         | [T7](tutorials/T7)   | |
 | Thu | 12:00 | Lucas Foppa                  | [T8](tutorials/T8)   | |
-| Fri | 09:45 | Robert Pinsler               | T9                   | |
+| Fri | 09:45 | Robert Pinsler               | [T9](tutorials/T9)   | |
 | Fri | 12:00 | Andrés M Bran                | [T10](tutorials/T10) | [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rbi-mtm/ml4mmr/blob/main/tutorials/T10/agents.ipynb) |
 
 > [!NOTE]
