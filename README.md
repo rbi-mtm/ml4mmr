@@ -45,7 +45,7 @@ frequently encountered issues are listed in [Common Issues](#6-common-issues).
 | Thu | 09:45 | Johannes Dietschreit         | [T7](tutorials/T7)   | |
 | Thu | 12:00 | Lucas Foppa                  | [T8](tutorials/T8)   | |
 | Fri | 09:45 | Robert Pinsler               | T9                   | |
-| Fri | 12:00 | Andrés M Bran                | [T10](tutorials/T10) | |
+| Fri | 12:00 | Andrés M Bran                | [T10](tutorials/T10) | [![badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rbi-mtm/ml4mmr/blob/main/tutorials/T10/agents.ipynb) |
 
 > [!NOTE]
 > The Google Colab links are given for some of the tutorials only for convenience and redundancy.
